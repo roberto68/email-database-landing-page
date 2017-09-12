@@ -1,18 +1,8 @@
 ## HEADER
 
-You can use the [editor on GitHub](https://github.com/roberto68/email-database-landing-page/edit/master/README.md)
-
-```markdown <!-- markdown section starts here -->
-Syntax highlighted code block
-
-# subscribe
-[Link](url) and ![Image](src)
-
-```  <!-- markdown section ends here -->
-
 <form name="gform" id="gform" enctype="text/plain" style="font-size:19px;" action="https://docs.google.com/forms/d/1vwzz5AKuFw8L0r0EetYNmz8eX5BscRJ_AUVqb8goQuA/prefill" target="hidden_iframe" onsubmit="submitted=true;">
 Email<br>
-<input type="email" tabindex="-1" class="email-field" name="email" required id="entry.232219261" placeholder="Your email address..."><br><input type="submit" value="Get Recommendations">
+<input type="email" tabindex="-1" class="email-field" name="email" required id="entry.232219261" placeholder="Your email address..."><br><input type="submit" value="Submit">
 </form>
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
@@ -46,5 +36,6 @@ function validate() {
 $("#validate").bind("click", validate);
 </script>
 
+edit this page [editor on GitHub](https://github.com/roberto68/email-database-landing-page/edit/master/README.md)
 Having trouble with Pages? Check out [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
