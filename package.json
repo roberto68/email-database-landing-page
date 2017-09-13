@@ -29,6 +29,8 @@
         "bootstrap": "^4.0.0-beta",
         "font-awesome": "4.7.0",
         "formidable": "^1.1.1",
+        "fs": "0.0.1-security",
+        "http": "0.0.0",
         "jquery": "^3.2.1",
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",

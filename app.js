@@ -9,8 +9,12 @@ function displayForm(res) {
         res.writeHead(200, {
             'Content-Type': 'text/html',
                 'Content-Length': data.length
-        });
-        res.write(data);
+           });
+        fs.appendFile('message.txt', data, function (err) {
+          if (err) throw err;
+  	  console.log('Saved!');
+	   });
+	res.write(data);
         res.end();
     });
 }
