@@ -1,23 +1,20 @@
 var http = require('http');
+var express = require('express');
 var fs = require('fs');
-var server = http.createServer(function (req, res) {
-    displayForm(res);
+app = express.createServer();
+app.configure(function(){
+  app.set('port', process.env.PORT || 3000);
+  app.use(express.logger('dev'));
+  app.use(express.bodyParser());
 });
 
-function displayForm(res) {
-    fs.readFile('index.html', function (err, data) {
-        res.writeHead(200, {
-            'Content-Type': 'text/html',
-                'Content-Length': data.length
-           });
-        fs.appendFile('message.txt', data, function (err) {
-          if (err) throw err;
+app.post('/submit', function(req, res) {
+  fs.appendFile('emailDatabase.txt', req.body.email, function (err) {
+        if (err) throw err;
   	  console.log('Saved!');
-	   });
-	res.write(data);
-        res.end();
     });
-}
 
-server.listen(1185);
-console.log("server listening on 1185");
+});
+
+//app.listen(3000);
+console.log("server listening on 3000");

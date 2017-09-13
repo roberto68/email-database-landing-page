@@ -57,13 +57,12 @@
     <header class="masthead">
       <div class="header-content">
         <div class="header-content-inner">
-          <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
+	<div>
+	   <h1 id="homeHeading">Your Favorite Source of Free Bootstrap Themes</h1>
           <hr>
           <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-<form action="" method="post" enctype="multipart/form-data">
-Email<br>
-<input type="email" tabindex="-1" class="email-field" name="email" required id="entry.232219261" placeholder="Your email address..."><br><input class="btn btn-primary btn-xl js-scroll-trigger"type="submit" value="Submit">
-</form>
+	</div>         
+	<div w3-include-html="form.html"></div>
        </div>
       </div>
     </header>
@@ -261,8 +260,10 @@ Email<br>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
 
     <!-- Custom scripts for this template -->
+   <script>w3.includeHTML();</script>
     <script src="js/creative.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript">var submitted=false;</script>
